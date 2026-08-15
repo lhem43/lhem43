@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero.svg" alt="Le Minh Anh — data engineer" width="100%" />
+  <img src="./assets/hero.svg" alt="leemanh — data engineer" width="100%" />
 </div>
 
 <br/>
@@ -8,24 +8,34 @@
 <tr>
 <td width="58%" valign="top">
 
-### currently building
+### current arc
 
-I work around **streaming systems, lakehouse architecture, and data platforms** — mostly the parts that need to remain understandable long after the first successful demo.
+I’m **leemanh** — a data engineer focused on **streaming systems, lakehouse architecture, and data platforms**.
 
-My default question is not *“can this scale?”* but *“can someone still reason about this at 3 a.m.?”*
+I like systems that stay readable under pressure: clear data movement, dependable orchestration, and table formats that do not become chaos six months later.
+
+My default question is not just *“can this scale?”* but *“can a team still reason about it when the stakes go up?”*
 
 </td>
 <td width="42%" valign="top">
 
 ### operating surface
 
-`python` · `spark` · `kafka` · `debezium`  
-`airflow` · `dbt` · `trino`  
-`iceberg` · `hudi` · `kubernetes`
+`aws` · `spark` · `trino` · `iceberg`  
+`hudi` · `airflow` · `databricks`  
+`kafka` · `dbt` · `python`
 
 </td>
 </tr>
 </table>
+
+### profile DNA
+
+```text
+sun-hearted  -> ambitious, visible, forward-moving
+rain-minded  -> calm, reflective, steady under noise
+sword-line   -> sharp decisions, clean execution
+```
 
 <details>
 <summary><b>open the stack map</b> — what I tend to reach for and why</summary>
@@ -33,13 +43,13 @@ My default question is not *“can this scale?”* but *“can someone still rea
 
 | layer | tools | what I care about |
 |---|---|---|
-| ingest | Debezium, Kafka | ordering, replay, observability |
+| cloud | AWS, Databricks | dependable foundations, operational leverage |
+| ingest | Kafka | ordering, replay, observability |
 | compute | Spark | deterministic transforms, operational simplicity |
 | orchestration | Airflow | recoverability, clear dependency boundaries |
 | modeling | dbt | readable transformations, contract-like interfaces |
 | storage | Iceberg, Hudi | open formats, evolution, time travel |
 | query | Trino | one access layer across heterogeneous storage |
-| runtime | Kubernetes | repeatable operations without hiding failure modes |
 
 </details>
 
@@ -58,4 +68,4 @@ My default question is not *“can this scale?”* but *“can someone still rea
 
 ---
 
-<sub>Prefer small interfaces, explicit failure modes, boring production.</sub>
+<sub>sun-hearted · rain-minded · production-first</sub>
