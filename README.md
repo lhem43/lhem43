@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero.svg" alt="leemanh — data engineer" width="100%" />
+  <img src="./assets/leemanh-sword-20260815.svg" alt="leemanh — data engineer" width="100%" />
 </div>
 
 <br/>
@@ -38,18 +38,18 @@ sword-line   -> sharp decisions, clean execution
 ```
 
 <details>
-<summary><b>open the stack map</b> — what I tend to reach for and why</summary>
+<summary><b>open the stack map</b> — how I think about systems</summary>
 <br/>
 
 | layer | tools | what I care about |
 |---|---|---|
-| cloud | AWS, Databricks | dependable foundations, operational leverage |
-| ingest | Kafka | ordering, replay, observability |
-| compute | Spark | deterministic transforms, operational simplicity |
+| cloud | AWS | boring primitives, clear ownership, controllable cost |
+| compute | Spark, Databricks | deterministic transforms, operational simplicity |
 | orchestration | Airflow | recoverability, clear dependency boundaries |
-| modeling | dbt | readable transformations, contract-like interfaces |
 | storage | Iceberg, Hudi | open formats, evolution, time travel |
 | query | Trino | one access layer across heterogeneous storage |
+| modeling | dbt | readable transformations, contract-like interfaces |
+| stream | Kafka | ordering, replay, observability |
 
 </details>
 
@@ -68,4 +68,4 @@ sword-line   -> sharp decisions, clean execution
 
 ---
 
-<sub>sun-hearted · rain-minded · production-first</sub>
+<sub>white / red / sun / rain / sword / systems</sub>
