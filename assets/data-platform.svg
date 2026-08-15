@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="leemanh data platform architecture">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#60a5fa"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="26" fill="#0b1220"/>
+  <text x="58" y="58" fill="#f8fafc" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800">the data platform I like to build</text>
+  <text x="58" y="88" fill="#7f90a5" font-family="Inter, system-ui, sans-serif" font-size="16">event-driven ingestion → scalable processing → open lakehouse → SQL serving → governed transformations</text>
+
+  <g font-family="Inter, system-ui, sans-serif">
+    <g transform="translate(58 136)">
+      <rect width="170" height="94" rx="18" fill="#111a29" stroke="#23415d"/>
+      <text x="20" y="30" fill="#7dd3fc" font-size="13" font-weight="700" letter-spacing="1">INGEST</text>
+      <text x="20" y="59" fill="#f1f5f9" font-size="20" font-weight="700">Kafka</text>
+      <text x="20" y="82" fill="#93a4b8" font-size="14">Debezium · CDC</text>
+    </g>
+
+    <g transform="translate(285 136)">
+      <rect width="170" height="94" rx="18" fill="#111a29" stroke="#2b4b6f"/>
+      <text x="20" y="30" fill="#7dd3fc" font-size="13" font-weight="700" letter-spacing="1">PROCESS</text>
+      <text x="20" y="59" fill="#f1f5f9" font-size="20" font-weight="700">Spark</text>
+      <text x="20" y="82" fill="#93a4b8" font-size="14">Python · batch/stream</text>
+    </g>
+
+    <g transform="translate(512 136)">
+      <rect width="170" height="94" rx="18" fill="#111a29" stroke="#394a73"/>
+      <text x="20" y="30" fill="#a5b4fc" font-size="13" font-weight="700" letter-spacing="1">LAKEHOUSE</text>
+      <text x="20" y="59" fill="#f1f5f9" font-size="20" font-weight="700">Iceberg</text>
+      <text x="20" y="82" fill="#93a4b8" font-size="14">Hudi · object storage</text>
+    </g>
+
+    <g transform="translate(739 136)">
+      <rect width="170" height="94" rx="18" fill="#111a29" stroke="#4b467a"/>
+      <text x="20" y="30" fill="#c4b5fd" font-size="13" font-weight="700" letter-spacing="1">SERVE</text>
+      <text x="20" y="59" fill="#f1f5f9" font-size="20" font-weight="700">Trino</text>
+      <text x="20" y="82" fill="#93a4b8" font-size="14">SQL · federation</text>
+    </g>
+
+    <g transform="translate(966 136)">
+      <rect width="176" height="94" rx="18" fill="#111a29" stroke="#5a477a"/>
+      <text x="20" y="30" fill="#d8b4fe" font-size="13" font-weight="700" letter-spacing="1">MODEL</text>
+      <text x="20" y="59" fill="#f1f5f9" font-size="20" font-weight="700">dbt</text>
+      <text x="20" y="82" fill="#93a4b8" font-size="14">tests · lineage · docs</text>
+    </g>
+  </g>
+
+  <g stroke="url(#line)" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M228 183 H285"/>
+    <path d="M455 183 H512"/>
+    <path d="M682 183 H739"/>
+    <path d="M909 183 H966"/>
+  </g>
+
+  <g transform="translate(58 282)" font-family="Inter, system-ui, sans-serif">
+    <rect width="1084" height="86" rx="18" fill="#0f1826" stroke="#243349"/>
+    <text x="24" y="30" fill="#64748b" font-size="13" font-weight="700" letter-spacing="1">PLATFORM LAYER</text>
+    <text x="24" y="60" fill="#dce7f3" font-size="17" font-weight="650">Airflow</text>
+    <text x="116" y="60" fill="#52657a" font-size="17">•</text>
+    <text x="142" y="60" fill="#dce7f3" font-size="17" font-weight="650">Kubernetes</text>
+    <text x="270" y="60" fill="#52657a" font-size="17">•</text>
+    <text x="296" y="60" fill="#dce7f3" font-size="17" font-weight="650">Docker</text>
+    <text x="382" y="60" fill="#52657a" font-size="17">•</text>
+    <text x="408" y="60" fill="#dce7f3" font-size="17" font-weight="650">Linux</text>
+    <text x="478" y="60" fill="#52657a" font-size="17">•</text>
+    <text x="504" y="60" fill="#dce7f3" font-size="17" font-weight="650">GitHub Actions</text>
+    <text x="652" y="60" fill="#52657a" font-size="17">•</text>
+    <text x="678" y="60" fill="#dce7f3" font-size="17" font-weight="650">observability</text>
+    <text x="822" y="60" fill="#52657a" font-size="17">•</text>
+    <text x="848" y="60" fill="#dce7f3" font-size="17" font-weight="650">data quality</text>
+  </g>
+</svg>
