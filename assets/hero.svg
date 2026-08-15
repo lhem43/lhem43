@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" fill="none" role="img" aria-label="leemanh — data engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070A12"/>
+      <stop offset="0.55" stop-color="#0A1020"/>
+      <stop offset="1" stop-color="#101225"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55D7FF"/>
+      <stop offset="0.48" stop-color="#6E9BFF"/>
+      <stop offset="1" stop-color="#B277FF"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 210) rotate(90) scale(280 420)">
+      <stop stop-color="#4EA7FF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#4EA7FF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#141C2F" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#0D1424" stop-opacity="0.76"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" stroke="#29334A" stroke-width="1" opacity="0.28"/>
+    </pattern>
+    <filter id="blur28" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="round"><rect width="1200" height="560" rx="34"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="560" fill="url(#bg)"/>
+    <rect width="1200" height="560" fill="url(#grid)"/>
+    <ellipse cx="925" cy="205" rx="415" ry="290" fill="url(#halo)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
+    </ellipse>
+    <circle cx="1040" cy="94" r="120" fill="#704BFF" opacity="0.05" filter="url(#blur28)">
+      <animate attributeName="cx" values="1010;1060;1010" dur="11s" repeatCount="indefinite"/>
+    </circle>
+
+    <rect x="1" y="1" width="1198" height="558" rx="33" stroke="#273047" stroke-opacity="0.9"/>
+
+    <g font-family="Inter,Segoe UI,Arial,sans-serif">
+      <g transform="translate(68 54)">
+        <circle cx="7" cy="7" r="6" fill="#45E68A">
+          <animate attributeName="opacity" values="0.35;1;0.35" dur="2.6s" repeatCount="indefinite"/>
+        </circle>
+        <text x="28" y="13" fill="#8391AA" font-size="14" font-weight="600" letter-spacing="2.2">DATA ENGINEER</text>
+      </g>
+
+      <text x="68" y="168" fill="#F8FAFC" font-size="82" font-weight="760" letter-spacing="-3.4">leemanh</text>
+      <text x="70" y="216" fill="#B8C5D8" font-size="24" font-weight="450">streaming · lakehouse · data platform</text>
+
+      <text x="70" y="286" fill="#E3EAF4" font-size="20" font-weight="520">I build data systems that are</text>
+      <text x="70" y="319" fill="url(#accent)" font-size="20" font-weight="700">fast to change · easy to reason about · boring in production.</text>
+
+      <g transform="translate(70 365)" font-size="14" font-weight="600">
+        <g><rect width="84" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="42" y="21" text-anchor="middle" fill="#C9D6E8">python</text></g>
+        <g transform="translate(94 0)"><rect width="78" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="39" y="21" text-anchor="middle" fill="#C9D6E8">spark</text></g>
+        <g transform="translate(182 0)"><rect width="80" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="40" y="21" text-anchor="middle" fill="#C9D6E8">kafka</text></g>
+        <g transform="translate(272 0)"><rect width="90" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="45" y="21" text-anchor="middle" fill="#C9D6E8">iceberg</text></g>
+        <g transform="translate(372 0)"><rect width="76" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="38" y="21" text-anchor="middle" fill="#C9D6E8">trino</text></g>
+        <g transform="translate(458 0)"><rect width="70" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="35" y="21" text-anchor="middle" fill="#C9D6E8">dbt</text></g>
+      </g>
+
+      <text x="70" y="470" fill="#65748E" font-size="13" letter-spacing="1.2">CDC  /  ORCHESTRATION  /  DISTRIBUTED COMPUTE  /  OPEN TABLE FORMATS</text>
+    </g>
+
+    <g transform="translate(650 92)">
+      <rect x="0" y="0" width="482" height="380" rx="28" fill="url(#glass)" stroke="#28334A"/>
+      <text x="28" y="36" fill="#8290A9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">DATA FLOW / 01</text>
+
+      <path id="flow" d="M44 206 C108 206 102 92 176 92 H270 C343 92 340 206 408 206" stroke="url(#accent)" stroke-width="3.2" stroke-linecap="round" fill="none" opacity="0.92"/>
+      <path d="M44 206 C108 206 102 92 176 92 H270 C343 92 340 206 408 206" stroke="#61B7FF" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.05" filter="url(#glow)"/>
+
+      <g font-family="Inter,Segoe UI,Arial,sans-serif">
+        <g transform="translate(36 184)">
+          <circle cx="16" cy="22" r="16" fill="#101827" stroke="#33506E" stroke-width="2"/>
+          <circle cx="16" cy="22" r="4" fill="#5AD9FF"/>
+          <text x="16" y="58" text-anchor="middle" fill="#91A2BB" font-size="12">source</text>
+        </g>
+        <g transform="translate(148 70)">
+          <circle cx="28" cy="22" r="18" fill="#101827" stroke="#375776" stroke-width="2"/>
+          <text x="28" y="27" text-anchor="middle" fill="#E7EEF8" font-size="10" font-weight="700">CDC</text>
+          <text x="28" y="60" text-anchor="middle" fill="#91A2BB" font-size="12">debezium</text>
+        </g>
+        <g transform="translate(242 70)">
+          <circle cx="28" cy="22" r="18" fill="#101827" stroke="#42577E" stroke-width="2"/>
+          <text x="28" y="27" text-anchor="middle" fill="#E7EEF8" font-size="10" font-weight="700">BUS</text>
+          <text x="28" y="60" text-anchor="middle" fill="#91A2BB" font-size="12">kafka</text>
+        </g>
+        <g transform="translate(378 184)">
+          <circle cx="30" cy="22" r="18" fill="#101827" stroke="#554D84" stroke-width="2"/>
+          <text x="30" y="27" text-anchor="middle" fill="#E7EEF8" font-size="9" font-weight="700">SPARK</text>
+          <text x="30" y="60" text-anchor="middle" fill="#91A2BB" font-size="12">compute</text>
+        </g>
+      </g>
+
+      <circle r="5" fill="#E4F8FF" filter="url(#glow)">
+        <animateMotion dur="4.6s" repeatCount="indefinite"><mpath href="#flow"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4" fill="#C4B5FD" filter="url(#glow)">
+        <animateMotion dur="4.6s" begin="1.53s" repeatCount="indefinite"><mpath href="#flow"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" begin="1.53s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="4" fill="#67E8F9" filter="url(#glow)">
+        <animateMotion dur="4.6s" begin="3.06s" repeatCount="indefinite"><mpath href="#flow"/></animateMotion>
+        <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" begin="3.06s" repeatCount="indefinite"/>
+      </circle>
+
+      <g transform="translate(54 286)" font-family="Inter,Segoe UI,Arial,sans-serif">
+        <rect width="374" height="62" rx="16" fill="#0D1524" stroke="#243149"/>
+        <text x="18" y="25" fill="#687B98" font-size="10" font-weight="700" letter-spacing="1.5">PLATFORM</text>
+        <text x="18" y="45" fill="#DCE6F3" font-size="15" font-weight="600">airflow · dbt · iceberg / hudi · trino · kubernetes</text>
+      </g>
+
+      <g transform="translate(28 24)" opacity="0.55">
+        <circle cx="420" cy="10" r="2" fill="#506078"/>
+        <circle cx="432" cy="10" r="2" fill="#506078"/>
+        <circle cx="444" cy="10" r="2" fill="#506078"/>
+      </g>
+    </g>
+
+    <rect x="0" y="527" width="1200" height="33" fill="#070A12" opacity="0.88"/>
+    <rect x="0" y="527" width="1200" height="1" fill="url(#accent)" opacity="0.6">
+      <animate attributeName="opacity" values="0.25;0.8;0.25" dur="5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
