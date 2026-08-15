@@ -1,23 +1,28 @@
+<div align="center">
+
 # leemanh
 
-Data Engineer working across batch, streaming, CDC, lakehouse, and data platform engineering.
+**data engineer**
 
-`Python` · `Spark` · `Airflow` · `dbt` · `Kafka` · `Debezium` · `Trino` · `Iceberg` · `Hudi` · `Kubernetes`
+`batch` · `streaming` · `cdc` · `lakehouse`
 
-## recent public work
+</div>
+
+I work on reliable ingestion, distributed compute, open table formats, and analytics-ready data models.
+
+```text
+sources → debezium → kafka → spark → iceberg / hudi → trino
+                                ↘ dbt
+                   airflow · kubernetes
+```
+
+`python` · `sql` · `spark` · `kafka` · `debezium` · `iceberg` · `hudi` · `trino` · `dbt` · `airflow` · `kubernetes`
+
+## recent work
 
 <!-- recent-projects:start -->
-### [kufi-e-wallet-with-hyperledger-chain-cli](https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli)
-<sub>Dart · updated 2026-08-15 · [latest commit](https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli/commit/bdfea1c199b93b92500c69115a281132d19dc0b4)</sub>
-
+**[kufi-e-wallet-with-hyperledger-chain-cli](https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli)**  
+<sub>[15 Aug 2026](https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli/commit/bdfea1c199b93b92500c69115a281132d19dc0b4) · docs: polish project README and architecture overview</sub>
 <!-- recent-projects:end -->
 
-<sub>This section is generated automatically from public repositories, ordered by the latest commit on each default branch.</sub>
-
-## activity
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=lhem43&theme=github-compact&hide_border=true&area=false" width="100%" alt="GitHub activity" />
-
-<div align="right">
-  <img src="https://komarev.com/ghpvc/?username=lhem43&label=views&color=64748b&style=flat" alt="profile views" />
-</div>
+<sub>public repositories, ordered by latest commit</sub>
