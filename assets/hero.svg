@@ -1,84 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
-  <title id="title">Le Minh Anh — Data Engineer</title>
-  <desc id="desc">An animated editorial banner about building reliable data systems.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">leemanh — data engineer</title>
+  <desc id="desc">White and red editorial profile banner with sun, rain and sword-inspired motifs.</desc>
   <defs>
-    <clipPath id="frame"><rect width="1200" height="580" rx="0"/></clipPath>
-    <pattern id="micro" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" fill="none" stroke="#222720" stroke-width="1" opacity=".5"/>
-    </pattern>
-    <filter id="softGlow" x="-200%" y="-200%" width="400%" height="400%">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <linearGradient id="fade" x1="0" x2="1">
-      <stop stop-color="#D7FF55" stop-opacity="0"/>
-      <stop offset=".5" stop-color="#D7FF55" stop-opacity=".18"/>
-      <stop offset="1" stop-color="#D7FF55" stop-opacity="0"/>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E12B3D"/>
+      <stop offset="1" stop-color="#8D1522"/>
     </linearGradient>
+    <pattern id="rain" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(12)">
+      <line x1="14" y1="0" x2="14" y2="28" stroke="#E9C4CA" stroke-width="1" opacity=".7"/>
+    </pattern>
+    <filter id="soft" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+    <style>
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace}
+    </style>
   </defs>
 
-  <g clip-path="url(#frame)" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace">
-    <rect width="1200" height="580" fill="#0B0D0B"/>
-    <rect width="1200" height="580" fill="url(#micro)" opacity=".65"/>
+  <rect width="1280" height="720" fill="#FCFBF8"/>
+  <rect width="1280" height="720" fill="url(#rain)" opacity=".28"/>
 
-    <rect x="-380" y="0" width="380" height="580" fill="url(#fade)" opacity=".75">
-      <animate attributeName="x" values="-380;1200" dur="9s" repeatCount="indefinite"/>
-    </rect>
-
-    <path d="M34 34H148 M34 34V148 M1166 34H1052 M1166 34V148 M34 546H148 M34 546V432 M1166 546H1052 M1166 546V432" stroke="#32372F" stroke-width="1"/>
-    <text x="66" y="74" fill="#D7FF55" font-size="13" letter-spacing="2.4">LE MINH ANH / DATA ENGINEER</text>
-    <circle cx="47" cy="69" r="4" fill="#D7FF55">
-      <animate attributeName="opacity" values=".25;1;.25" dur="2.4s" repeatCount="indefinite"/>
-    </circle>
-    <text x="1020" y="74" fill="#7F887A" font-size="12" letter-spacing="1.8">PROFILE / 43</text>
-
-    <text x="64" y="205" fill="#F1F4EB" font-family="Arial,Helvetica,sans-serif" font-size="96" font-weight="800" letter-spacing="-5">MOVE DATA.</text>
-    <text x="64" y="306" fill="none" stroke="#F1F4EB" stroke-width="1.4" font-family="Arial,Helvetica,sans-serif" font-size="96" font-weight="800" letter-spacing="-5">KEEP TRUTH.</text>
-    <text x="64" y="306" fill="#D7FF55" font-family="Arial,Helvetica,sans-serif" font-size="96" font-weight="800" letter-spacing="-5" opacity="0">KEEP TRUTH.
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.55;.58;.64;1" dur="6.8s" repeatCount="indefinite"/>
-    </text>
-
-    <g transform="translate(855 128)">
-      <line x1="0" y1="0" x2="0" y2="167" stroke="#3A4037"/>
-      <text x="26" y="8" fill="#7F887A" font-size="11" letter-spacing="2">WHAT I OPTIMIZE FOR</text>
-      <text x="26" y="46" fill="#E4E9DD" font-size="16">change without fear</text>
-      <text x="26" y="78" fill="#E4E9DD" font-size="16">failures you can explain</text>
-      <text x="26" y="110" fill="#E4E9DD" font-size="16">quiet production nights</text>
-      <text x="26" y="155" fill="#D7FF55" font-size="12" letter-spacing="1.5">STREAM / MODEL / ORCHESTRATE</text>
-    </g>
-
-    <g transform="translate(64 360)">
-      <text x="0" y="0" fill="#7F887A" font-size="11" letter-spacing="2">LIVE SIGNAL</text>
-      <path id="signal" d="M0 62 H120 C150 62 150 18 180 18 H330 C360 18 360 88 392 88 H544 C574 88 574 42 606 42 H748 C780 42 780 72 810 72 H1068" fill="none" stroke="#4B5446" stroke-width="1.2"/>
-      <path d="M0 62 H120 C150 62 150 18 180 18 H330 C360 18 360 88 392 88 H544 C574 88 574 42 606 42 H748 C780 42 780 72 810 72 H1068" fill="none" stroke="#D7FF55" stroke-width="2.2" stroke-dasharray="3 10" opacity=".9">
-        <animate attributeName="stroke-dashoffset" values="0;-52" dur="2.8s" repeatCount="indefinite"/>
-      </path>
-      <g fill="#0B0D0B" stroke="#788171">
-        <circle cx="120" cy="62" r="5"/><circle cx="180" cy="18" r="5"/><circle cx="392" cy="88" r="5"/><circle cx="606" cy="42" r="5"/><circle cx="810" cy="72" r="5"/>
-      </g>
-      <g fill="#A7B09F" font-size="10" letter-spacing="1">
-        <text x="104" y="84">CDC</text><text x="164" y="8">BUS</text><text x="372" y="111">COMPUTE</text><text x="586" y="31">TABLE</text><text x="786" y="95">SERVE</text>
-      </g>
-      <circle r="5" fill="#D7FF55" filter="url(#softGlow)">
-        <animateMotion dur="5.4s" repeatCount="indefinite"><mpath href="#signal"/></animateMotion>
-      </circle>
-      <circle r="3" fill="#F1F4EB">
-        <animateMotion dur="5.4s" begin="-1.8s" repeatCount="indefinite"><mpath href="#signal"/></animateMotion>
-      </circle>
-      <circle r="3" fill="#F1F4EB">
-        <animateMotion dur="5.4s" begin="-3.6s" repeatCount="indefinite"><mpath href="#signal"/></animateMotion>
-      </circle>
-    </g>
-
-    <line x1="0" y1="512" x2="1200" y2="512" stroke="#30352E"/>
-    <g transform="translate(0 538)" font-size="12" letter-spacing="1.6" fill="#AEB6A6">
-      <g>
-        <text x="0" y="0">PYTHON  ·  SPARK  ·  KAFKA  ·  DEBEZIUM  ·  AIRFLOW  ·  DBT  ·  TRINO  ·  ICEBERG  ·  HUDI  ·  KUBERNETES  ·  </text>
-        <text x="1040" y="0">PYTHON  ·  SPARK  ·  KAFKA  ·  DEBEZIUM  ·  AIRFLOW  ·  DBT  ·  TRINO  ·  ICEBERG  ·  HUDI  ·  KUBERNETES  ·  </text>
-        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1040 0" dur="18s" repeatCount="indefinite"/>
-      </g>
-    </g>
-    <rect x="0" y="558" width="1200" height="22" fill="#D7FF55"/>
-    <text x="64" y="573" fill="#0B0D0B" font-size="10.5" font-weight="700" letter-spacing="2">BUILD SYSTEMS THAT STAY UNDERSTANDABLE WHEN THEY GET BIG.</text>
+  <g opacity=".22" stroke="#C92333" stroke-width="1">
+    <path d="M62 82H1218M62 638H1218M62 82V638M1218 82V638"/>
+    <path d="M91 110H174M91 110V193M1189 110H1106M1189 110V193M91 610H174M91 610V527M1189 610H1106M1189 610V527"/>
   </g>
+
+  <g transform="translate(1014 98)">
+    <circle cx="90" cy="90" r="76" fill="#C92333" opacity=".08" filter="url(#soft)"/>
+    <circle cx="90" cy="90" r="62" fill="none" stroke="#C92333" stroke-width="3.5"/>
+    <circle cx="90" cy="90" r="36" fill="#C92333"/>
+    <path d="M90 28C105 50 115 70 115 90C115 110 105 130 90 152C75 130 65 110 65 90C65 70 75 50 90 28Z" fill="#FCFBF8"/>
+    <circle cx="90" cy="90" r="5" fill="#FCFBF8"/>
+    <text x="90" y="190" text-anchor="middle" class="mono" font-size="10.5" letter-spacing="2.2" fill="#8C5A61">SUN / RAIN / RESOLVE</text>
+  </g>
+
+  <g transform="translate(112 126)">
+    <circle cx="6" cy="6" r="5" fill="#C92333">
+      <animate attributeName="opacity" values=".35;1;.35" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="24" y="11" class="mono" fill="#A81E2D" font-size="13" font-weight="700" letter-spacing="2.8">LEEMANH / DATA ENGINEER</text>
+  </g>
+
+  <g transform="translate(110 235)">
+    <text x="0" y="0" class="sans" fill="#171717" font-size="124" font-weight="820" letter-spacing="-6">leemanh</text>
+    <text x="3" y="52" class="mono" fill="#7E5960" font-size="19" letter-spacing="1.1">aws · spark · trino · iceberg · hudi · airflow · databricks</text>
+  </g>
+
+  <g transform="translate(112 378)">
+    <text x="0" y="0" class="sans" fill="#202020" font-size="34" font-weight="680">I build systems that stay clear</text>
+    <text x="0" y="48" class="sans" fill="#C92333" font-size="34" font-weight="820">when the scale gets messy.</text>
+    <text x="0" y="98" class="mono" fill="#7B6569" font-size="15" letter-spacing="1.5">sun-hearted / rain-minded / production-first</text>
+  </g>
+
+  <g transform="translate(112 525)">
+    <text x="0" y="0" class="mono" fill="#A81E2D" font-size="11" font-weight="700" letter-spacing="2.2">OPERATING SURFACE</text>
+    <text x="0" y="34" class="sans" fill="#252525" font-size="18" font-weight="650">streaming systems · lakehouse architecture · orchestration · open table formats</text>
+    <text x="0" y="62" class="mono" fill="#8D7378" font-size="12.5">explicit failure modes · readable architecture · quiet production nights</text>
+  </g>
+
+  <g transform="translate(850 346)">
+    <text x="0" y="0" class="mono" fill="#A81E2D" font-size="11" font-weight="700" letter-spacing="2.2">DATA PATH</text>
+    <path id="route" d="M0 86H76C117 86 124 42 164 42H253C294 42 302 127 344 127H430C471 127 481 72 522 72H610" fill="none" stroke="#E5BDC4" stroke-width="2.5"/>
+    <path d="M0 86H76C117 86 124 42 164 42H253C294 42 302 127 344 127H430C471 127 481 72 522 72H610" fill="none" stroke="#C92333" stroke-width="2.5" stroke-dasharray="5 10">
+      <animate attributeName="stroke-dashoffset" values="0;-60" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <g fill="#FCFBF8" stroke="#C92333" stroke-width="1.8">
+      <circle cx="76" cy="86" r="5"/><circle cx="164" cy="42" r="5"/><circle cx="344" cy="127" r="5"/><circle cx="522" cy="72" r="5"/>
+    </g>
+    <g class="mono" fill="#8A686E" font-size="10.5" letter-spacing="1.1">
+      <text x="51" y="108">ingest</text><text x="140" y="25">stream</text><text x="319" y="151">table</text><text x="500" y="55">serve</text>
+    </g>
+    <circle r="5.5" fill="#C92333" filter="url(#soft)">
+      <animateMotion dur="5.7s" repeatCount="indefinite"><mpath href="#route"/></animateMotion>
+    </circle>
+  </g>
+
+  <g transform="translate(989 500)">
+    <g transform="rotate(-34 64 72)">
+      <path d="M60 0L69 10L66 129L58 129Z" fill="url(#blade)"/>
+      <rect x="32" y="124" width="61" height="9" rx="4.5" fill="#202020"/>
+      <rect x="45" y="135" width="35" height="11" rx="4" fill="#C92333"/>
+      <rect x="52" y="147" width="21" height="35" rx="8" fill="#202020"/>
+    </g>
+    <text x="136" y="34" class="mono" fill="#A81E2D" font-size="10.5" font-weight="700" letter-spacing="2">SWORD LINE</text>
+    <text x="136" y="63" class="sans" fill="#282828" font-size="17" font-weight="650">precision over noise</text>
+    <text x="136" y="87" class="sans" fill="#666" font-size="14">clean decisions, clean systems</text>
+  </g>
+
+  <line x1="62" y1="664" x2="1218" y2="664" stroke="#D9B1B8"/>
+  <text x="112" y="692" class="mono" fill="#A81E2D" font-size="11" letter-spacing="2.6">WHITE / RED / SUN / RAIN / SWORD / SYSTEMS</text>
+  <text x="1168" y="692" text-anchor="end" class="mono" fill="#927176" font-size="11" letter-spacing="2">PROFILE / 43</text>
 </svg>
