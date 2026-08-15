@@ -1,133 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" fill="none" role="img" aria-label="leemanh — data engineer">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="580" viewBox="0 0 1200 580" role="img" aria-labelledby="title desc">
+  <title id="title">Le Minh Anh — Data Engineer</title>
+  <desc id="desc">An animated editorial banner about building reliable data systems.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070A12"/>
-      <stop offset="0.55" stop-color="#0A1020"/>
-      <stop offset="1" stop-color="#101225"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#55D7FF"/>
-      <stop offset="0.48" stop-color="#6E9BFF"/>
-      <stop offset="1" stop-color="#B277FF"/>
-    </linearGradient>
-    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(920 210) rotate(90) scale(280 420)">
-      <stop stop-color="#4EA7FF" stop-opacity="0.16"/>
-      <stop offset="1" stop-color="#4EA7FF" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#141C2F" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="#0D1424" stop-opacity="0.76"/>
-    </linearGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" stroke="#29334A" stroke-width="1" opacity="0.28"/>
+    <clipPath id="frame"><rect width="1200" height="580" rx="0"/></clipPath>
+    <pattern id="micro" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#222720" stroke-width="1" opacity=".5"/>
     </pattern>
-    <filter id="blur28" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="28"/>
+    <filter id="softGlow" x="-200%" y="-200%" width="400%" height="400%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
-      <feGaussianBlur stdDeviation="7" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="round"><rect width="1200" height="560" rx="34"/></clipPath>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop stop-color="#D7FF55" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#D7FF55" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#D7FF55" stop-opacity="0"/>
+    </linearGradient>
   </defs>
 
-  <g clip-path="url(#round)">
-    <rect width="1200" height="560" fill="url(#bg)"/>
-    <rect width="1200" height="560" fill="url(#grid)"/>
-    <ellipse cx="925" cy="205" rx="415" ry="290" fill="url(#halo)">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="7s" repeatCount="indefinite"/>
-    </ellipse>
-    <circle cx="1040" cy="94" r="120" fill="#704BFF" opacity="0.05" filter="url(#blur28)">
-      <animate attributeName="cx" values="1010;1060;1010" dur="11s" repeatCount="indefinite"/>
-    </circle>
+  <g clip-path="url(#frame)" font-family="ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono',monospace">
+    <rect width="1200" height="580" fill="#0B0D0B"/>
+    <rect width="1200" height="580" fill="url(#micro)" opacity=".65"/>
 
-    <rect x="1" y="1" width="1198" height="558" rx="33" stroke="#273047" stroke-opacity="0.9"/>
-
-    <g font-family="Inter,Segoe UI,Arial,sans-serif">
-      <g transform="translate(68 54)">
-        <circle cx="7" cy="7" r="6" fill="#45E68A">
-          <animate attributeName="opacity" values="0.35;1;0.35" dur="2.6s" repeatCount="indefinite"/>
-        </circle>
-        <text x="28" y="13" fill="#8391AA" font-size="14" font-weight="600" letter-spacing="2.2">DATA ENGINEER</text>
-      </g>
-
-      <text x="68" y="168" fill="#F8FAFC" font-size="82" font-weight="760" letter-spacing="-3.4">leemanh</text>
-      <text x="70" y="216" fill="#B8C5D8" font-size="24" font-weight="450">streaming · lakehouse · data platform</text>
-
-      <text x="70" y="286" fill="#E3EAF4" font-size="20" font-weight="520">I build data systems that are</text>
-      <text x="70" y="319" fill="url(#accent)" font-size="20" font-weight="700">fast to change · easy to reason about · boring in production.</text>
-
-      <g transform="translate(70 365)" font-size="14" font-weight="600">
-        <g><rect width="84" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="42" y="21" text-anchor="middle" fill="#C9D6E8">python</text></g>
-        <g transform="translate(94 0)"><rect width="78" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="39" y="21" text-anchor="middle" fill="#C9D6E8">spark</text></g>
-        <g transform="translate(182 0)"><rect width="80" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="40" y="21" text-anchor="middle" fill="#C9D6E8">kafka</text></g>
-        <g transform="translate(272 0)"><rect width="90" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="45" y="21" text-anchor="middle" fill="#C9D6E8">iceberg</text></g>
-        <g transform="translate(372 0)"><rect width="76" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="38" y="21" text-anchor="middle" fill="#C9D6E8">trino</text></g>
-        <g transform="translate(458 0)"><rect width="70" height="32" rx="16" fill="#101827" stroke="#253149"/><text x="35" y="21" text-anchor="middle" fill="#C9D6E8">dbt</text></g>
-      </g>
-
-      <text x="70" y="470" fill="#65748E" font-size="13" letter-spacing="1.2">CDC  /  ORCHESTRATION  /  DISTRIBUTED COMPUTE  /  OPEN TABLE FORMATS</text>
-    </g>
-
-    <g transform="translate(650 92)">
-      <rect x="0" y="0" width="482" height="380" rx="28" fill="url(#glass)" stroke="#28334A"/>
-      <text x="28" y="36" fill="#8290A9" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2">DATA FLOW / 01</text>
-
-      <path id="flow" d="M44 206 C108 206 102 92 176 92 H270 C343 92 340 206 408 206" stroke="url(#accent)" stroke-width="3.2" stroke-linecap="round" fill="none" opacity="0.92"/>
-      <path d="M44 206 C108 206 102 92 176 92 H270 C343 92 340 206 408 206" stroke="#61B7FF" stroke-width="18" stroke-linecap="round" fill="none" opacity="0.05" filter="url(#glow)"/>
-
-      <g font-family="Inter,Segoe UI,Arial,sans-serif">
-        <g transform="translate(36 184)">
-          <circle cx="16" cy="22" r="16" fill="#101827" stroke="#33506E" stroke-width="2"/>
-          <circle cx="16" cy="22" r="4" fill="#5AD9FF"/>
-          <text x="16" y="58" text-anchor="middle" fill="#91A2BB" font-size="12">source</text>
-        </g>
-        <g transform="translate(148 70)">
-          <circle cx="28" cy="22" r="18" fill="#101827" stroke="#375776" stroke-width="2"/>
-          <text x="28" y="27" text-anchor="middle" fill="#E7EEF8" font-size="10" font-weight="700">CDC</text>
-          <text x="28" y="60" text-anchor="middle" fill="#91A2BB" font-size="12">debezium</text>
-        </g>
-        <g transform="translate(242 70)">
-          <circle cx="28" cy="22" r="18" fill="#101827" stroke="#42577E" stroke-width="2"/>
-          <text x="28" y="27" text-anchor="middle" fill="#E7EEF8" font-size="10" font-weight="700">BUS</text>
-          <text x="28" y="60" text-anchor="middle" fill="#91A2BB" font-size="12">kafka</text>
-        </g>
-        <g transform="translate(378 184)">
-          <circle cx="30" cy="22" r="18" fill="#101827" stroke="#554D84" stroke-width="2"/>
-          <text x="30" y="27" text-anchor="middle" fill="#E7EEF8" font-size="9" font-weight="700">SPARK</text>
-          <text x="30" y="60" text-anchor="middle" fill="#91A2BB" font-size="12">compute</text>
-        </g>
-      </g>
-
-      <circle r="5" fill="#E4F8FF" filter="url(#glow)">
-        <animateMotion dur="4.6s" repeatCount="indefinite"><mpath href="#flow"/></animateMotion>
-        <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" repeatCount="indefinite"/>
-      </circle>
-      <circle r="4" fill="#C4B5FD" filter="url(#glow)">
-        <animateMotion dur="4.6s" begin="1.53s" repeatCount="indefinite"><mpath href="#flow"/></animateMotion>
-        <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" begin="1.53s" repeatCount="indefinite"/>
-      </circle>
-      <circle r="4" fill="#67E8F9" filter="url(#glow)">
-        <animateMotion dur="4.6s" begin="3.06s" repeatCount="indefinite"><mpath href="#flow"/></animateMotion>
-        <animate attributeName="opacity" values="0;1;1;0" dur="4.6s" begin="3.06s" repeatCount="indefinite"/>
-      </circle>
-
-      <g transform="translate(54 286)" font-family="Inter,Segoe UI,Arial,sans-serif">
-        <rect width="374" height="62" rx="16" fill="#0D1524" stroke="#243149"/>
-        <text x="18" y="25" fill="#687B98" font-size="10" font-weight="700" letter-spacing="1.5">PLATFORM</text>
-        <text x="18" y="45" fill="#DCE6F3" font-size="15" font-weight="600">airflow · dbt · iceberg / hudi · trino · kubernetes</text>
-      </g>
-
-      <g transform="translate(28 24)" opacity="0.55">
-        <circle cx="420" cy="10" r="2" fill="#506078"/>
-        <circle cx="432" cy="10" r="2" fill="#506078"/>
-        <circle cx="444" cy="10" r="2" fill="#506078"/>
-      </g>
-    </g>
-
-    <rect x="0" y="527" width="1200" height="33" fill="#070A12" opacity="0.88"/>
-    <rect x="0" y="527" width="1200" height="1" fill="url(#accent)" opacity="0.6">
-      <animate attributeName="opacity" values="0.25;0.8;0.25" dur="5s" repeatCount="indefinite"/>
+    <rect x="-380" y="0" width="380" height="580" fill="url(#fade)" opacity=".75">
+      <animate attributeName="x" values="-380;1200" dur="9s" repeatCount="indefinite"/>
     </rect>
+
+    <path d="M34 34H148 M34 34V148 M1166 34H1052 M1166 34V148 M34 546H148 M34 546V432 M1166 546H1052 M1166 546V432" stroke="#32372F" stroke-width="1"/>
+    <text x="66" y="74" fill="#D7FF55" font-size="13" letter-spacing="2.4">LE MINH ANH / DATA ENGINEER</text>
+    <circle cx="47" cy="69" r="4" fill="#D7FF55">
+      <animate attributeName="opacity" values=".25;1;.25" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1020" y="74" fill="#7F887A" font-size="12" letter-spacing="1.8">PROFILE / 43</text>
+
+    <text x="64" y="205" fill="#F1F4EB" font-family="Arial,Helvetica,sans-serif" font-size="96" font-weight="800" letter-spacing="-5">MOVE DATA.</text>
+    <text x="64" y="306" fill="none" stroke="#F1F4EB" stroke-width="1.4" font-family="Arial,Helvetica,sans-serif" font-size="96" font-weight="800" letter-spacing="-5">KEEP TRUTH.</text>
+    <text x="64" y="306" fill="#D7FF55" font-family="Arial,Helvetica,sans-serif" font-size="96" font-weight="800" letter-spacing="-5" opacity="0">KEEP TRUTH.
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;.55;.58;.64;1" dur="6.8s" repeatCount="indefinite"/>
+    </text>
+
+    <g transform="translate(855 128)">
+      <line x1="0" y1="0" x2="0" y2="167" stroke="#3A4037"/>
+      <text x="26" y="8" fill="#7F887A" font-size="11" letter-spacing="2">WHAT I OPTIMIZE FOR</text>
+      <text x="26" y="46" fill="#E4E9DD" font-size="16">change without fear</text>
+      <text x="26" y="78" fill="#E4E9DD" font-size="16">failures you can explain</text>
+      <text x="26" y="110" fill="#E4E9DD" font-size="16">quiet production nights</text>
+      <text x="26" y="155" fill="#D7FF55" font-size="12" letter-spacing="1.5">STREAM / MODEL / ORCHESTRATE</text>
+    </g>
+
+    <g transform="translate(64 360)">
+      <text x="0" y="0" fill="#7F887A" font-size="11" letter-spacing="2">LIVE SIGNAL</text>
+      <path id="signal" d="M0 62 H120 C150 62 150 18 180 18 H330 C360 18 360 88 392 88 H544 C574 88 574 42 606 42 H748 C780 42 780 72 810 72 H1068" fill="none" stroke="#4B5446" stroke-width="1.2"/>
+      <path d="M0 62 H120 C150 62 150 18 180 18 H330 C360 18 360 88 392 88 H544 C574 88 574 42 606 42 H748 C780 42 780 72 810 72 H1068" fill="none" stroke="#D7FF55" stroke-width="2.2" stroke-dasharray="3 10" opacity=".9">
+        <animate attributeName="stroke-dashoffset" values="0;-52" dur="2.8s" repeatCount="indefinite"/>
+      </path>
+      <g fill="#0B0D0B" stroke="#788171">
+        <circle cx="120" cy="62" r="5"/><circle cx="180" cy="18" r="5"/><circle cx="392" cy="88" r="5"/><circle cx="606" cy="42" r="5"/><circle cx="810" cy="72" r="5"/>
+      </g>
+      <g fill="#A7B09F" font-size="10" letter-spacing="1">
+        <text x="104" y="84">CDC</text><text x="164" y="8">BUS</text><text x="372" y="111">COMPUTE</text><text x="586" y="31">TABLE</text><text x="786" y="95">SERVE</text>
+      </g>
+      <circle r="5" fill="#D7FF55" filter="url(#softGlow)">
+        <animateMotion dur="5.4s" repeatCount="indefinite"><mpath href="#signal"/></animateMotion>
+      </circle>
+      <circle r="3" fill="#F1F4EB">
+        <animateMotion dur="5.4s" begin="-1.8s" repeatCount="indefinite"><mpath href="#signal"/></animateMotion>
+      </circle>
+      <circle r="3" fill="#F1F4EB">
+        <animateMotion dur="5.4s" begin="-3.6s" repeatCount="indefinite"><mpath href="#signal"/></animateMotion>
+      </circle>
+    </g>
+
+    <line x1="0" y1="512" x2="1200" y2="512" stroke="#30352E"/>
+    <g transform="translate(0 538)" font-size="12" letter-spacing="1.6" fill="#AEB6A6">
+      <g>
+        <text x="0" y="0">PYTHON  ·  SPARK  ·  KAFKA  ·  DEBEZIUM  ·  AIRFLOW  ·  DBT  ·  TRINO  ·  ICEBERG  ·  HUDI  ·  KUBERNETES  ·  </text>
+        <text x="1040" y="0">PYTHON  ·  SPARK  ·  KAFKA  ·  DEBEZIUM  ·  AIRFLOW  ·  DBT  ·  TRINO  ·  ICEBERG  ·  HUDI  ·  KUBERNETES  ·  </text>
+        <animateTransform attributeName="transform" type="translate" from="0 0" to="-1040 0" dur="18s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <rect x="0" y="558" width="1200" height="22" fill="#D7FF55"/>
+    <text x="64" y="573" fill="#0B0D0B" font-size="10.5" font-weight="700" letter-spacing="2">BUILD SYSTEMS THAT STAY UNDERSTANDABLE WHEN THEY GET BIG.</text>
   </g>
 </svg>
