@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/leemanh-sword-20260815.svg" alt="leemanh — data engineer" width="100%" />
+  <img src="./assets/leemanh-sunline-swordline-v1.svg" alt="leemanh — data engineer" width="100%" />
 </div>
 
 <br/>
@@ -10,11 +10,11 @@
 
 ### current arc
 
-I’m **leemanh** — a data engineer focused on **streaming systems, lakehouse architecture, and data platforms**.
+I’m **leemanh** — a data engineer working around **streaming systems, lakehouse architecture, and data platforms**.
 
-I like systems that stay readable under pressure: clear data movement, dependable orchestration, and table formats that do not become chaos six months later.
+I care about systems that stay readable when they get bigger: clear data movement, reliable orchestration, and storage/query layers that remain easy to reason about after the first successful demo.
 
-My default question is not just *“can this scale?”* but *“can a team still reason about it when the stakes go up?”*
+My default question is not just *“can this scale?”* but *“can a team still understand it when the pressure goes up?”*
 
 </td>
 <td width="42%" valign="top">
@@ -25,35 +25,30 @@ My default question is not just *“can this scale?”* but *“can a team still
 `hudi` · `airflow` · `databricks`  
 `kafka` · `dbt` · `python`
 
+### what I optimize for
+
+- clarity under scale
+- boring production
+- clean interfaces
+- fast debugging
+- explicit failure modes
+
 </td>
 </tr>
 </table>
 
-### profile DNA
-
-```text
-sun-hearted  -> ambitious, visible, forward-moving
-rain-minded  -> calm, reflective, steady under noise
-sword-line   -> sharp decisions, clean execution
-```
-
 <details>
-<summary><b>open the stack map</b> — how I think about systems</summary>
+<summary><b>open profile DNA</b></summary>
 <br/>
 
-| layer | tools | what I care about |
-|---|---|---|
-| cloud | AWS | boring primitives, clear ownership, controllable cost |
-| compute | Spark, Databricks | deterministic transforms, operational simplicity |
-| orchestration | Airflow | recoverability, clear dependency boundaries |
-| storage | Iceberg, Hudi | open formats, evolution, time travel |
-| query | Trino | one access layer across heterogeneous storage |
-| modeling | dbt | readable transformations, contract-like interfaces |
-| stream | Kafka | ordering, replay, observability |
+| motif | what it means here |
+|---|---|
+| sun | ambition, visibility, lead energy |
+| rain | calm, patience, reflective thinking |
+| sword line | precision, decisive execution, clean cuts |
+| white / red | clarity first, intensity only where it matters |
 
 </details>
-
-<br/>
 
 ## recent work
 
@@ -66,6 +61,4 @@ sword-line   -> sharp decisions, clean execution
 
 <br/>
 
----
-
-<sub>white / red / sun / rain / sword / systems</sub>
+<sub>Prefer sharp architecture, quiet systems, and production that stays boring.</sub>
