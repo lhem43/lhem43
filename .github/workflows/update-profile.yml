@@ -23,7 +23,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Rebuild code-drawn profile SVG
+      - name: Rebuild code-drawn profile SVGs
         run: python scripts/build_profile_svg.py
       - name: Update recent public projects
         env:
@@ -33,12 +33,12 @@ jobs:
         run: python scripts/update_recent_projects.py
       - name: Commit changes
         run: |
-          if git diff --quiet README.md assets/profile/profile-code.svg; then
+          if git diff --quiet README.md assets/profile/profile-code.svg assets/profile/profile-hero.svg; then
             echo "No profile changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md assets/profile/profile-code.svg
-          git commit -m "chore: rebuild profile artwork"
+          git add README.md assets/profile/profile-code.svg assets/profile/profile-hero.svg
+          git commit -m "chore: rebuild hybrid profile"
           git push
