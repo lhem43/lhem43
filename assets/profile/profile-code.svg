@@ -244,4 +244,21 @@
   <g fill="#e51f29"><circle cx="785" cy="26" r="2.1"/><circle cx="813" cy="24" r="2.1"/></g>
   <g transform="translate(694 44) scale(.58)"><g fill-rule="evenodd" fill="#e51f29"><path d="M159,49L157,49L156,50L158,52L160,50Z M157,50L158,49L159,50L158,51Z"/><path d="M109,49L109,50L111,52L111,50Z"/><path d="M149,41L148,41L149,43L148,44L146,44L148,44L149,45L149,48L147,51L149,50L150,48L150,45L152,43L151,43Z"/><path d="M142,41L142,50L143,50L143,48L144,47L143,48L142,47L143,45L143,41Z"/><path d="M64,41L64,42L65,42L66,44L62,48L63,48L66,45L67,45L69,47L69,49L68,50L66,48L64,50L65,51L68,51L70,50L70,46L68,46L66,44L68,42L68,41Z"/><path d="M54,42L53,41L51,43Z"/><path d="M47,41L47,49L48,51L52,51L54,49L52,50L49,50L48,49L48,41Z"/><path d="M128,40L126,42L127,43L127,51L126,52L132,49L136,52L135,50L135,44L134,43L136,42L136,41L135,40Z M131,48L132,47L133,48L132,49Z M132,43L133,42L134,44L133,45Z M132,41L133,40L134,41L133,42Z M129,40L130,41L130,49L129,50L128,49L128,41Z"/><path d="M97,40L97,42L96,43L94,42L94,43L96,44L94,46L94,47L95,47L97,45L98,47L96,49L96,51L102,51L100,50L99,48L101,46L102,46L103,44L102,44L100,46L97,44L99,42L100,42L98,40Z M96,49L97,48L99,49L98,50Z"/><path d="M81,40L82,42L81,44L81,49L80,50L79,49L79,45L77,45L78,46L78,49L76,51L79,50L83,52L87,52L88,51L87,50L87,43L88,41L86,40L84,41Z M86,41L87,42L86,44L86,50L85,51L83,51L82,50L82,44Z"/><path d="M77,40L77,41L79,42L79,41Z"/><path d="M30,40L30,43L29,44L29,46L30,47L30,52L31,51L31,42L32,41L33,42L35,41L37,44L36,46L38,46L39,47L37,48L38,49L37,51L35,51L34,50L34,48L33,48L33,52L35,51L38,51L39,52L39,43L41,42L39,40L37,40L39,41L38,42L36,42L35,41Z"/></g></g>
 </g>
+
+<g aria-hidden="true" pointer-events="none">
+  <circle cx="770" cy="205" r="126" fill="none" stroke="#e3202a" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="122;136;122" dur="4.8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;.22;0" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+  <g opacity=".16">
+    <path d="M886 50v45 M918 72v52 M953 39v58 M989 67v47 M1027 45v55 M1064 72v43" stroke="#686868" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="0 -28;0 42" dur="3.8s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  <g fill="#e3202a" opacity=".6">
+    <circle cx="64" cy="116" r="2"><animate attributeName="opacity" values=".2;.9;.2" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="1066" cy="512" r="2"><animate attributeName="opacity" values=".8;.15;.8" dur="3.1s" repeatCount="indefinite"/></circle>
+  </g>
+</g>
+
 </svg>
