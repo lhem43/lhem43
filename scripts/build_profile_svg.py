@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import base64, zlib
+import base64, re, zlib
 
 ROOT = Path(__file__).resolve().parents[1]
 PARTS = ROOT / "scripts" / "profile_payload"
-out = ROOT / "assets" / "profile" / "profile-code.svg"
+FULL_OUT = ROOT / "assets" / "profile" / "profile-code.svg"
+HERO_OUT = ROOT / "assets" / "profile" / "profile-hero.svg"
 order = ("part1.txt", "part1b.txt", "part2.txt", "part3.txt")
 encoded = "".join((PARTS / name).read_text(encoding="utf-8").strip() for name in order)
 svg = zlib.decompress(base64.b64decode(encoded)).decode("utf-8")
 
-# GitHub READMEs do not run JavaScript. These are SVG-native SMIL effects so the
-# artwork still works as a normal image if GitHub strips an animation element.
+# GitHub READMEs do not run JavaScript. These are SVG-native SMIL effects.
 motion = r'''
 <g aria-hidden="true" pointer-events="none">
   <circle cx="770" cy="205" r="126" fill="none" stroke="#e3202a" stroke-width="2" opacity="0">
@@ -32,5 +32,12 @@ motion = r'''
 if "</svg>" not in svg:
     raise SystemExit("invalid SVG template")
 svg = svg.replace("</svg>", motion + "\n</svg>")
-out.write_text(svg, encoding="utf-8")
-print(f"wrote {out} ({len(svg.encode('utf-8'))} bytes)")
+FULL_OUT.write_text(svg, encoding="utf-8")
+
+# The README uses a cropped vector hero and native GitHub HTML for the rest.
+hero = re.sub(r'height="1369"', 'height="690"', svg, count=1)
+hero = re.sub(r'viewBox="0 0 1149 1369"', 'viewBox="0 0 1149 690"', hero, count=1)
+HERO_OUT.write_text(hero, encoding="utf-8")
+
+print(f"wrote {FULL_OUT} ({len(svg.encode('utf-8'))} bytes)")
+print(f"wrote {HERO_OUT} ({len(hero.encode('utf-8'))} bytes)")
