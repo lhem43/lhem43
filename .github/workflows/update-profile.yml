@@ -2,43 +2,65 @@ name: update profile
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * *'
   push:
     branches: [main]
     paths:
-      - "scripts/build_profile_svg.py"
-      - "scripts/profile_payload/**"
-      - "scripts/update_recent_projects.py"
-      - ".github/workflows/update-profile.yml"
-  schedule:
-    - cron: "17 2 * * *"
+      - 'README.md'
+      - 'scripts/build_profile_svg.py'
+      - 'scripts/update_recent_projects.py'
+      - '.github/workflows/update-profile.yml'
 
 permissions:
   contents: write
+
+concurrency:
+  group: profile-readme
+  cancel-in-progress: true
 
 jobs:
   profile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Rebuild code-drawn profile SVGs
+          python-version: '3.12'
+
+      - name: Clean stale generated assets
+        run: |
+          rm -rf scripts/profile_payload
+          rm -rf assets/profile/slices
+          rm -f assets/profile/profile-code.svg
+          rm -f assets/profile/profile-exact.svg
+          rm -f assets/profile/profile-full.webp
+          rm -f assets/hero.svg
+          rm -f assets/leemanh-japanese-editorial-v2.svg
+          rm -f assets/leemanh-sunline-swordline-v1.svg
+          rm -f assets/leemanh-sword-20260815.svg
+
+      - name: Rebuild code-drawn profile hero
         run: python scripts/build_profile_svg.py
+
       - name: Update recent public projects
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PROFILE_OWNER: lhem43
-          PROJECT_LIMIT: "4"
+          PROJECT_LIMIT: '4'
         run: python scripts/update_recent_projects.py
+
       - name: Commit changes
         run: |
-          git add README.md assets/profile/profile-code.svg assets/profile/profile-hero.svg
+          git add -A
           if git diff --cached --quiet; then
-            echo "No profile changes"
+            echo 'No profile changes'
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: rebuild hybrid profile"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: refresh profile'
           git push
