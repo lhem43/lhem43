@@ -1,11 +1,7 @@
 <div align="center">
-  <img src="./assets/leemanh-japanese-editorial-v2.svg" alt="leemanh — data engineer · Japanese editorial profile" width="100%" />
+  <img src="./assets/profile/profile-exact.svg" alt="leemanh — data engineer · Japanese editorial profile" width="100%" />
 </div>
 
-<br/>
-
 <!-- recent-projects:start -->
-<!--
-kufi-e-wallet-with-hyperledger-chain-cli | 15 Aug 2026 | https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli/commit/bdfea1c199b93b92500c69115a281132d19dc0b4 | docs: polish project README and architecture overview
--->
+<!-- recent projects are represented visually in the profile artwork -->
 <!-- recent-projects:end -->
