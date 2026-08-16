@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1149" height="1369" viewBox="0 0 1149 1369" role="img" aria-labelledby="title desc">
+<title id="title">leemanh — data engineer profile</title>
+<desc id="desc">Code-drawn Japanese editorial GitHub profile with a red sun, samurai, technology stack, experience and recent work.</desc>
+<defs>
+  <style>
+    .sans{font-family:Arial,Helvetica,sans-serif}.serif{font-family:Georgia,'Times New Roman',serif}.jp{font-family:'Noto Sans JP','Yu Gothic','Hiragino Kaku Gothic ProN',sans-serif}
+    .ink{fill:#111}.muted{fill:#6c7076}.red{fill:#e3202a}.stroke-red{stroke:#e3202a}.line{stroke:#d9d9d9;stroke-width:1}.thin{stroke:#111;stroke-width:1.2;fill:none}.cap{font-size:10px;letter-spacing:2.2px}.tiny{font-size:9px}.small{font-size:11px}.body{font-size:15px}.label{font-size:12px;font-weight:700}.badge{fill:#fff;stroke:#dedede;stroke-width:1}.mono{font-family:'Courier New',monospace}
+  </style>
+  <filter id="rough" x="-20%" y="-20%" width="140%" height="140%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.018 0.09" numOctaves="2" seed="13" result="noise"/>
+    <feDisplacementMap in="SourceGraphic" in2="noise" scale="5" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="7"/></filter>
+  <pattern id="rain" width="19" height="38" patternUnits="userSpaceOnUse" patternTransform="rotate(7)">
+    <line x1="3" y1="0" x2="3" y2="31" stroke="#aaa" stroke-width="1" opacity=".22"/>
+  </pattern>
+  <clipPath id="sunClip"><circle cx="770" cy="205" r="122"/></clipPath>
+</defs>
+
+<!-- paper -->
+<rect width="1149" height="1369" fill="#fbfaf7"/>
+<rect x="555" y="0" width="594" height="520" fill="url(#rain)" opacity=".8"/>
+
+<!-- ink washes -->
+<g fill="#b7babd" opacity=".22" filter="url(#rough)">
+  <path d="M525 0 C625 24 653 12 736 31 C832 53 910 10 1002 30 L1149 0 L1149 94 C1040 83 955 121 879 103 C781 79 702 107 627 74 C585 56 552 46 525 35Z"/>
+  <path d="M905 62 C966 104 1034 95 1149 79 L1149 376 C1082 359 1044 324 996 333 C943 343 909 313 886 275 C856 225 862 151 905 62Z"/>
+  <path d="M986 392 C1042 374 1097 392 1149 360 L1149 646 C1080 625 1030 640 982 616 C927 589 930 519 962 478Z"/>
+  <path d="M0 1167 C83 1136 124 1162 197 1126 C248 1101 296 1111 343 1142 C273 1160 205 1178 147 1190 C85 1204 43 1193 0 1210Z"/>
+</g>
+<g fill="#6e7377" opacity=".10" filter="url(#soft)">
+  <ellipse cx="966" cy="430" rx="188" ry="36"/><ellipse cx="260" cy="1155" rx="160" ry="26"/><ellipse cx="815" cy="510" rx="210" ry="20"/>
+</g>
+
+<!-- top signature -->
+<g transform="translate(34 38)">
+  <circle cx="13" cy="0" r="8" fill="none" stroke="#e3202a" stroke-width="2"/>
+  <g stroke="#e3202a" stroke-width="1.4"><line x1="13" y1="-15" x2="13" y2="-10"/><line x1="13" y1="10" x2="13" y2="15"/><line x1="-2" y1="0" x2="3" y2="0"/><line x1="23" y1="0" x2="28" y2="0"/><line x1="3" y1="-10" x2="7" y2="-6"/><line x1="19" y1="6" x2="23" y2="10"/><line x1="3" y1="10" x2="7" y2="6"/><line x1="19" y1="-6" x2="23" y2="-10"/></g>
+  <text x="38" y="5" class="sans label red">leemanh</text><text x="104" y="5" class="mono small muted">/ README.md</text>
+</g>
+
+<!-- hero left -->
+<g transform="translate(72 132)">
+  <circle cx="8" cy="-2" r="6" fill="none" stroke="#e3202a" stroke-width="1.8"/><line x1="8" y1="-14" x2="8" y2="-10" class="stroke-red"/><line x1="8" y1="6" x2="8" y2="10" class="stroke-red"/>
+  <text x="31" y="4" class="jp body ink">データは剣。 真実は我が道。</text><line x1="292" y1="-1" x2="338" y2="-1" stroke="#e3202a" stroke-width="2"/>
+  <text x="0" y="112" class="serif ink" font-size="105" font-weight="700" letter-spacing="-4">leemanh</text>
+  <line x1="0" y1="150" x2="28" y2="150" stroke="#e3202a" stroke-width="2"/><text x="44" y="155" class="sans cap muted">DATA ENGINEER</text>
+  <text x="0" y="205" class="serif body ink">I build scalable data systems that turn complexity</text>
+  <text x="0" y="231" class="serif body ink">into <tspan fill="#e3202a" font-weight="700">clarity</tspan> and raw data into <tspan fill="#e3202a" font-weight="700">decisions.</tspan></text>
+
+  <g transform="translate(0 286)" class="sans">
+    <g transform="translate(0 0)"><text class="tiny muted">CLOUD</text><text y="35" class="red" font-size="24" font-weight="700">aws</text><path d="M1 42 Q25 53 48 42" fill="none" stroke="#e3202a" stroke-width="2"/></g>
+    <g transform="translate(86 0)"><text class="tiny muted">COMPUTE</text><text y="35" class="red" font-size="22" font-weight="700">spark</text><path d="M4 23 l12 -9 l-3 10 l10 -1 l-14 14 l4 -11z" fill="none" stroke="#e3202a" stroke-width="1.3"/></g>
+    <g transform="translate(180 0)"><text class="tiny muted">QUERY</text><text y="35" class="red" font-size="22" font-weight="700">trino</text><circle cx="7" cy="27" r="6" fill="none" stroke="#e3202a"/><line x1="7" y1="18" x2="7" y2="10" stroke="#e3202a"/></g>
+    <g transform="translate(280 0)"><text class="tiny muted">ORCHESTRATE</text><text y="35" class="red" font-size="21" font-weight="700">Airflow</text><path d="M2 18 l17 9 l-17 9 l6 -9z M19 27 l10 -14 l0 28z" fill="#e3202a" opacity=".92"/></g>
+    <g transform="translate(390 0)"><text class="tiny muted">PLATFORM</text><text y="35" class="red" font-size="20" font-weight="700">databricks</text><path d="M1 20 l10 -6 l10 6 l-10 6z M1 28 l10 6 l10 -6" fill="none" stroke="#e3202a" stroke-width="1.5"/></g>
+  </g>
+</g>
+
+<!-- red sun -->
+<circle cx="770" cy="205" r="122" fill="#e3202a" filter="url(#rough)"/>
+<g clip-path="url(#sunClip)" stroke="#fbfaf7" fill="none" opacity=".95" filter="url(#rough)">
+  <path d="M635 146 C686 132 735 153 804 143 C839 138 872 137 904 149" stroke-width="12"/>
+  <path d="M642 183 C690 173 725 187 776 180 C830 171 865 184 900 180" stroke-width="7"/>
+  <path d="M650 236 C695 227 743 247 796 235 C844 224 871 239 897 232" stroke-width="10"/>
+  <path d="M675 281 C728 269 782 287 842 273" stroke-width="6"/>
+</g>
+
+<!-- distant clouds -->
+<g fill="#fff" opacity=".95" filter="url(#rough)">
+ <path d="M610 148 C636 129 670 130 684 145 C708 125 741 132 748 151 C724 162 696 161 671 159 C649 157 627 162 610 148Z"/>
+ <path d="M815 119 C840 104 868 107 882 123 C901 113 925 118 934 132 C911 143 882 140 861 141 C842 141 824 136 815 119Z"/>
+</g>
+
+<!-- vector samurai -->
+<g transform="translate(704 176)" class="ink">
+  <!-- hair/head -->
+  <circle cx="28" cy="37" r="18"/><path d="M8 34 L-2 25 L10 25 L4 14 L17 19 L18 6 L27 16 L36 3 L39 17 L51 10 L47 24 L61 23 L50 34Z"/>
+  <!-- neck --> <path d="M20 52 L38 51 L43 70 L18 70Z"/>
+  <!-- torso/robe --> <path d="M10 64 C25 57 46 58 59 70 L72 134 C66 160 49 183 24 202 L-4 171 L4 111Z"/>
+  <path d="M7 75 L-42 116 L-31 129 L9 104Z"/><path d="M57 76 L90 122 L78 134 L50 108Z"/>
+  <!-- waist --> <rect x="0" y="128" width="64" height="10" rx="3"/>
+  <!-- hakama --> <path d="M3 136 L31 137 L18 230 L-10 263 L3 206Z"/><path d="M32 137 L63 135 L74 207 L101 258 L67 236 L45 183Z"/>
+  <!-- cloak --> <path d="M2 86 C-19 137 -49 169 -84 190 C-55 184 -29 190 -13 204 C-26 178 -13 136 4 109Z"/>
+  <!-- sword --> <line x1="82" y1="109" x2="146" y2="273" stroke="#111" stroke-width="7" stroke-linecap="round"/><line x1="77" y1="103" x2="91" y2="98" stroke="#111" stroke-width="9"/>
+  <!-- highlights --> <path d="M16 72 C28 83 39 91 57 96 M1 111 C18 120 39 123 59 119 M10 156 C28 166 49 166 64 155" fill="none" stroke="#f6f3ec" stroke-width="2.5" opacity=".75"/>
+</g>
+
+<!-- ground ink -->
+<g fill="#121212" opacity=".95" filter="url(#rough)">
+  <path d="M570 438 C626 420 662 427 708 420 C768 411 819 436 867 431 C812 452 754 450 698 458 C645 465 603 462 570 438Z"/>
+  <path d="M618 449 C600 466 582 476 554 479 C582 481 609 478 641 468Z"/>
+</g>
+
+<!-- boat -->
+<g transform="translate(910 376)" stroke="#111" fill="none" stroke-width="2">
+  <path d="M-30 64 Q20 81 69 64 L57 82 L-16 82Z" fill="#111"/><line x1="20" y1="-7" x2="20" y2="65"/><path d="M20 5 L55 26 L20 35Z" fill="#fff"/><rect x="-3" y="34" width="42" height="31" fill="#fff"/><path d="M10 48 l9 -7 l9 7 l-9 8z"/>
+</g>
+
+<!-- far mountains -->
+<g fill="#7c8185" opacity=".34" filter="url(#rough)">
+  <path d="M848 465 L913 403 L955 449 L997 416 L1050 464Z"/><path d="M922 465 L1006 425 L1052 454 L1091 431 L1149 468Z"/>
+</g>
+
+<!-- vertical Japanese -->
+<g class="jp ink" font-size="15" letter-spacing="3">
+  <text x="1030" y="130" writing-mode="tb">太陽のように、燃え続ける。</text>
+  <text x="996" y="145" writing-mode="tb">雨のように、静かに磨く。</text>
+  <text x="962" y="164" writing-mode="tb">剣のように、信じた道を貫く。</text>
+</g>
+
+<!-- manifesto panel -->
+<g transform="translate(65 515)">
+  <rect x="0" y="0" width="1019" height="145" fill="#fff" stroke="#d6d6d6"/>
+  <text x="23" y="101" class="jp red" font-size="74" font-weight="700">道</text>
+  <text x="142" y="50" class="sans label ink">A SCALABLE SYSTEM</text><text x="142" y="73" class="sans label ink">IS LIKE A STRONG CREW.</text><text x="142" y="98" class="sans label red">TRUST. FLOW. PURPOSE.</text>
+  <line x1="360" y1="34" x2="360" y2="112" class="line"/>
+  <g transform="translate(405 30)"><circle cx="18" cy="20" r="12" fill="none" stroke="#e3202a" stroke-width="2"/><g stroke="#e3202a"><line x1="18" y1="0" x2="18" y2="6"/><line x1="18" y1="34" x2="18" y2="40"/><line x1="-2" y1="20" x2="4" y2="20"/><line x1="32" y1="20" x2="38" y2="20"/></g><text x="55" y="16" class="sans label ink">LIKE THE SUN</text><text x="55" y="41" class="sans small muted">Lead with energy.</text><text x="55" y="60" class="sans small muted">Inspire with impact.</text></g>
+  <g transform="translate(630 30)"><path d="M1 24 C3 14 12 12 18 16 C21 7 38 7 42 18 C50 18 54 22 54 29 L1 29Z" fill="none" stroke="#e3202a" stroke-width="2"/><path d="M12 36 l-5 9 M29 36 l-5 9 M46 36 l-5 9" stroke="#e3202a"/><text x="70" y="16" class="sans label ink">LIKE THE RAIN</text><text x="70" y="41" class="sans small muted">Stay silent.</text><text x="70" y="60" class="sans small muted">Keep improving.</text></g>
+  <g transform="translate(864 30)"><path d="M5 40 L42 3" stroke="#e3202a" stroke-width="6"/><path d="M2 43 l9 -2 l-6 -6z" fill="#e3202a"/><line x1="18" y1="29" x2="27" y2="38" stroke="#e3202a" stroke-width="3"/><text x="63" y="16" class="sans label ink">LIKE A SWORD</text><text x="63" y="41" class="sans small muted">Stay sharp.</text><text x="63" y="60" class="sans small muted">Cut through chaos.</text></g>
+</g>
+
+<!-- tech stack -->
+<g transform="translate(67 704)">
+  <text x="0" y="0" class="sans label ink">⚔  TECH STACK</text><line x1="133" y1="-5" x2="170" y2="-5" stroke="#e3202a"/><line x1="170" y1="-5" x2="1015" y2="-5" class="line"/>
+  <g transform="translate(0 28)" class="sans">
+    <g transform="translate(0)"><rect class="badge" width="82" height="49" rx="7"/><text x="17" y="31" class="red label">aws</text></g>
+    <g transform="translate(92)"><rect class="badge" width="82" height="49" rx="7"/><text x="17" y="31" class="red label">trino</text></g>
+    <g transform="translate(184)"><rect class="badge" width="82" height="49" rx="7"/><text x="10" y="31" class="red label">iceberg</text></g>
+    <g transform="translate(276)"><rect class="badge" width="82" height="49" rx="7"/><text x="22" y="31" class="red label">hudi</text></g>
+    <g transform="translate(368)"><rect class="badge" width="82" height="49" rx="7"/><text x="17" y="31" class="red label">spark</text></g>
+    <g transform="translate(460)"><rect class="badge" width="91" height="49" rx="7"/><text x="10" y="31" class="red small" font-weight="700">databricks</text></g>
+    <g transform="translate(561)"><rect class="badge" width="82" height="49" rx="7"/><text x="16" y="31" class="red label">airflow</text></g>
+    <g transform="translate(653)"><rect class="badge" width="82" height="49" rx="7"/><text x="14" y="31" class="red label">python</text></g>
+    <g transform="translate(745)"><rect class="badge" width="68" height="49" rx="7"/><text x="22" y="31" class="red label">sql</text></g>
+    <g transform="translate(823)"><rect class="badge" width="94" height="49" rx="7"/><text x="9" y="31" class="red small" font-weight="700">kubernetes</text></g>
+    <g transform="translate(927)"><rect class="badge" width="88" height="49" rx="7"/><text x="18" y="31" class="red label">docker</text></g>
+  </g>
+</g>
+
+<!-- experience and recent work -->
+<g transform="translate(72 825)">
+  <g><text x="0" y="0" class="sans label ink">▧  EXPERIENCE</text><line x1="128" y1="-5" x2="174" y2="-5" stroke="#e3202a"/><line x1="174" y1="-5" x2="337" y2="-5" class="line"/></g>
+  <g transform="translate(386 0)"><text x="0" y="0" class="sans label ink">▭  RECENT WORK</text><line x1="140" y1="-5" x2="183" y2="-5" stroke="#e3202a"/><line x1="183" y1="-5" x2="588" y2="-5" class="line"/><text x="594" y="0" class="sans tiny muted">AUTO-SORTED BY LATEST ACTIVITY</text></g>
+
+  <!-- timeline -->
+  <line x1="34" y1="48" x2="34" y2="310" stroke="#d5d5d5" stroke-width="2"/>
+  <g class="sans"><g transform="translate(34 51)"><circle r="6" fill="#e3202a"/><circle r="2" fill="#fff"/><text x="22" y="5" class="red small" font-weight="700">LAKEHOUSE ARCHITECTURE</text><text x="22" y="27" class="small ink">Designed and built lakehouse platforms</text><text x="22" y="44" class="small ink">on Iceberg &amp; Hudi.</text></g>
+  <g transform="translate(34 126)"><circle r="6" fill="#e3202a"/><circle r="2" fill="#fff"/><text x="22" y="5" class="red small" font-weight="700">DATA PIPELINES</text><text x="22" y="27" class="small ink">Real-time &amp; batch pipelines with Spark,</text><text x="22" y="44" class="small ink">Kafka, Airflow.</text></g>
+  <g transform="translate(34 201)"><circle r="6" fill="#e3202a"/><circle r="2" fill="#fff"/><text x="22" y="5" class="red small" font-weight="700">CLOUD NATIVE</text><text x="22" y="27" class="small ink">AWS-native, containerized, and</text><text x="22" y="44" class="small ink">infra as code.</text></g>
+  <g transform="translate(34 276)"><circle r="6" fill="#e3202a"/><circle r="2" fill="#fff"/><text x="22" y="5" class="red small" font-weight="700">DATA PRODUCTS</text><text x="22" y="27" class="small ink">From raw events to trusted datasets</text><text x="22" y="44" class="small ink">that power decisions.</text></g></g>
+
+  <!-- recent cards -->
+  <g transform="translate(386 34)" class="sans">
+    <rect width="626" height="68" fill="#fff" stroke="#ddd"/><text x="18" y="24" class="mono label ink">▯ lakehouse-on-aws-iceberg</text><text x="18" y="45" class="small muted">Production-ready lakehouse on AWS with Iceberg, Glue, and Trino.</text><circle cx="474" cy="23" r="4" fill="#2980b9"/><text x="485" y="27" class="tiny muted">Python</text><text x="552" y="27" class="tiny muted">★ 162</text><text x="552" y="46" class="tiny muted">Updated 2 days ago</text>
+    <g transform="translate(0 68)"><rect width="626" height="68" fill="#fff" stroke="#ddd"/><text x="18" y="24" class="mono label ink">▯ realtime-data-platform</text><text x="18" y="45" class="small muted">Streaming platform with Kafka, Spark, and Hudi on AWS.</text><circle cx="474" cy="23" r="4" fill="#e3202a"/><text x="485" y="27" class="tiny muted">Scala</text><text x="552" y="27" class="tiny muted">★ 98</text><text x="552" y="46" class="tiny muted">Updated 6 days ago</text></g>
+    <g transform="translate(0 136)"><rect width="626" height="68" fill="#fff" stroke="#ddd"/><text x="18" y="24" class="mono label ink">▯ airflow-data-pipelines</text><text x="18" y="45" class="small muted">Reusable Airflow DAGs for batch &amp; streaming workloads.</text><circle cx="474" cy="23" r="4" fill="#2980b9"/><text x="485" y="27" class="tiny muted">Python</text><text x="552" y="27" class="tiny muted">★ 74</text><text x="552" y="46" class="tiny muted">Updated last week</text></g>
+    <g transform="translate(0 204)"><rect width="626" height="68" fill="#fff" stroke="#ddd"/><text x="18" y="24" class="mono label ink">▯ trino-query-templates</text><text x="18" y="45" class="small muted">Useful Trino SQL templates &amp; performance tuning.</text><circle cx="474" cy="23" r="4" fill="#f39c12"/><text x="485" y="27" class="tiny muted">SQL</text><text x="552" y="27" class="tiny muted">★ 55</text><text x="552" y="46" class="tiny muted">Updated last week</text></g>
+  </g>
+</g>
+
+<!-- mountain footer transition -->
+<g transform="translate(38 1130)" fill="#3b3d3f" opacity=".82" filter="url(#rough)">
+  <path d="M0 58 L62 19 L101 51 L139 34 L190 61Z"/><path d="M72 61 L151 8 L208 58 L260 34 L318 65Z"/><path d="M160 66 L267 17 L347 66Z"/>
+  <g fill="#151515"><path d="M81 36 l-9 25 h18z"/><path d="M93 30 l-11 31 h22z"/><path d="M111 39 l-8 22 h16z"/><path d="M237 31 l-10 31 h21z"/></g>
+</g>
+
+<!-- footer -->
+<line x1="0" y1="1190" x2="1149" y2="1190" stroke="#d7d7d7"/>
+<g transform="translate(52 1222)">
+  <!-- crest --> <g transform="translate(0 12)" stroke="#e3202a" fill="none"><circle cx="30" cy="30" r="25" stroke-width="2"/><path d="M13 35 L22 20 L30 27 L38 20 L47 35 L41 49 L30 54 L19 49Z" stroke-width="2"/><circle cx="23" cy="37" r="2" fill="#e3202a"/><circle cx="37" cy="37" r="2" fill="#e3202a"/><path d="M24 45 Q30 49 36 45"/></g>
+  <text x="92" y="30" class="serif ink" font-size="18">“I don’t chase the sun.</text><text x="92" y="56" class="serif ink" font-size="18">I build things that outlast it.”</text><text x="92" y="82" class="mono red small" letter-spacing="1.5">CODE. BUILD. IMPACT.</text>
+
+  <!-- waveform --> <g transform="translate(457 10)"><circle cx="42" cy="34" r="31" fill="#e3202a"/><path d="M15 34 h8 l4 -13 l5 28 l6 -20 l6 13 l6 -25 l6 32 l5 -15 h10" fill="none" stroke="#fff" stroke-width="2"/><line x1="-48" y1="78" x2="124" y2="78" stroke="#bbb"/><circle cx="-46" cy="78" r="4" fill="#fff" stroke="#e3202a" stroke-width="2"/><text x="34" y="100" class="sans muted">◁  ▷  ▷|</text></g>
+
+  <g transform="translate(692 18)"><text x="0" y="18" class="red" font-size="18">⌖</text><text x="26" y="17" class="sans cap ink">HANOI, VIETNAM</text><text x="26" y="48" class="sans small ink">working under the sun,</text><text x="26" y="68" class="sans small ink">building through the rain.</text></g>
+
+  <!-- generic shinobi portrait -->
+  <g transform="translate(920 0)" fill="#111" stroke="#111">
+    <path d="M18 22 L34 4 L46 18 L63 2 L69 20 L88 7 L84 28 L105 27 L92 41 C105 60 103 87 90 103 C71 124 35 121 18 100 C2 80 3 49 18 22Z" fill="#f7f7f7" stroke-width="2"/>
+    <path d="M18 28 L38 14 L44 31 L62 11 L67 31 L89 18 L83 38 L101 36 L90 52 L13 51Z"/>
+    <rect x="22" y="48" width="69" height="18" rx="4" fill="#ddd"/><circle cx="57" cy="57" r="6" fill="none" stroke="#111" stroke-width="2"/><path d="M52 57 q5 -5 10 0 q-5 5 -10 0Z" fill="#111"/>
+    <path d="M17 71 Q56 91 96 70" fill="none" stroke-width="4"/><path d="M45 82 q12 9 24 0" fill="none" stroke-width="2"/>
+    <path d="M4 111 Q43 93 72 105 Q95 111 111 129 L14 129Z"/>
+    <path d="M78 82 C68 92 63 107 63 125" fill="none" stroke="#e3202a" stroke-width="3"/>
+  </g>
+  <text x="950" y="128" class="jp red" font-size="13">信じる道を、貫け。</text>
+</g>
+
+<!-- left margin phrase -->
+<text x="40" y="968" class="jp ink" font-size="11" letter-spacing="3" writing-mode="tb">道は続ける者だけが、景色を変えられる。</text>
+</svg>
