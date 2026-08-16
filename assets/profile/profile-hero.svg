@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1080" viewBox="0 0 900 1080" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
 <title id="title">leemanh — Data Engineer</title>
 <desc id="desc">Japanese editorial GitHub profile, drawn entirely as SVG code.</desc>
 <defs>
@@ -246,18 +246,18 @@
 </g>
 
 <g aria-hidden="true" pointer-events="none">
-  <circle cx="770" cy="205" r="126" fill="none" stroke="#e3202a" stroke-width="2" opacity="0">
-    <animate attributeName="r" values="122;136;122" dur="4.8s" repeatCount="indefinite"/>
+  <circle cx="660" cy="173" r="120" fill="none" stroke="#e51f29" stroke-width="2" opacity="0">
+    <animate attributeName="r" values="118;132;118" dur="4.8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;.22;0" dur="4.8s" repeatCount="indefinite"/>
   </circle>
   <g opacity=".16">
-    <path d="M886 50v45 M918 72v52 M953 39v58 M989 67v47 M1027 45v55 M1064 72v43" stroke="#686868" stroke-width="1">
-      <animateTransform attributeName="transform" type="translate" values="0 -28;0 42" dur="3.8s" repeatCount="indefinite"/>
+    <path d="M744 28v44 M778 52v52 M814 22v58 M850 54v46 M882 35v52" stroke="#686868" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="0 -24;0 38" dur="3.8s" repeatCount="indefinite"/>
     </path>
   </g>
-  <g fill="#e3202a" opacity=".6">
-    <circle cx="64" cy="116" r="2"><animate attributeName="opacity" values=".2;.9;.2" dur="2.3s" repeatCount="indefinite"/></circle>
-    <circle cx="1066" cy="512" r="2"><animate attributeName="opacity" values=".8;.15;.8" dur="3.1s" repeatCount="indefinite"/></circle>
+  <g fill="#e51f29" opacity=".6">
+    <circle cx="58" cy="94" r="2"><animate attributeName="opacity" values=".2;.9;.2" dur="2.3s" repeatCount="indefinite"/></circle>
+    <circle cx="852" cy="410" r="2"><animate attributeName="opacity" values=".8;.15;.8" dur="3.1s" repeatCount="indefinite"/></circle>
   </g>
 </g>
 
