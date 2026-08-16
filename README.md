@@ -1,6 +1,8 @@
 <div align="center">
-  <img src="./assets/profile/profile-full.webp" alt="leemanh — data engineer · Japanese editorial profile" width="100%" />
+  <img src="./assets/leemanh-japanese-editorial-v2.svg" alt="leemanh — data engineer · Japanese editorial profile" width="100%" />
 </div>
+
+<br/>
 
 <!-- recent-projects:start -->
 <!--
