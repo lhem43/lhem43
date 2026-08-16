@@ -43,6 +43,10 @@ def latest_commit(repo):
     return date, c.get("html_url", repo["html_url"]), message
 
 
+def html_comment_safe(text):
+    return text.replace("--", "—")
+
+
 repos = api(f"/users/{OWNER}/repos?type=owner&sort=full_name&per_page=100")
 items = []
 for repo in repos:
@@ -56,10 +60,11 @@ items.sort(key=lambda x: x[0], reverse=True)
 lines = []
 for date, commit_url, message, repo in items[:LIMIT]:
     day = datetime.fromisoformat(date.replace("Z", "+00:00")).strftime("%d %b %Y")
-    lines.append(f"**[{repo['name']}]({repo['html_url']})**  ")
-    lines.append(f"<sub>[{day}]({commit_url}) · {message}</sub>\n")
+    lines.append(f"{repo['name']} | {day} | {commit_url} | {message}")
 
-block = START + "\n" + ("\n".join(lines) if lines else "_No public work yet._") + "\n" + END
+payload = "\n".join(lines) if lines else "No public work yet."
+block = START + "\n<!--\n" + html_comment_safe(payload) + "\n-->\n" + END
+
 with open(README, encoding="utf-8") as f:
     text = f.read()
 if START not in text or END not in text:
