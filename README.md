@@ -1,66 +1,33 @@
 <div align="center">
-  <a href="https://github.com/lhem43" title="Open lhem43 profile">
-    <img src="./assets/profile/profile-hero.svg" alt="leemanh — code-generated editorial profile hero" width="100%" />
+  <a href="https://github.com/lhem43?tab=repositories" title="Explore my public repositories">
+    <img src="./assets/profile/profile-hero.webp" alt="leemanh — Data Engineer" width="100%" />
   </a>
 </div>
 
 <p align="center">
-  <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml">
-    <img src="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml/badge.svg" alt="update profile" />
-  </a>
-  <a href="https://github.com/lhem43?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repositories-open-111111?style=for-the-badge" alt="Public repositories" />
-  </a>
-  <a href="https://github.com/lhem43/lhem43/blob/main/scripts/build_profile_svg.py">
-    <img src="https://img.shields.io/badge/Vector%20Source-code-red?style=for-the-badge" alt="Vector source" />
-  </a>
-  <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml">
-    <img src="https://img.shields.io/badge/Automation-active-2ea043?style=for-the-badge" alt="Automation active" />
-  </a>
+  <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml"><img src="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml/badge.svg" alt="profile automation" /></a>
+  &nbsp;
+  <a href="https://github.com/lhem43?tab=repositories"><b>Repositories</b></a>
+  &nbsp;·&nbsp;
+  <a href="#recent-public-work"><b>Recent work</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml"><b>Automation</b></a>
 </p>
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-## Principles
-
-- **Like the sun** — set direction first, then move fast.
-- **Like the rain** — improve quietly, every day.
-- **Like a sword** — remove what blurs the truth.
-- **North star** — build data systems people can trust under pressure.
-
-</td>
-<td valign="top" width="50%">
-
-## Quick links
-
-- [Open repositories](https://github.com/lhem43?tab=repositories)
-- [Jump to recent public work](#recent-public-work)
-- [Profile automation runs](https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml)
-- [Hero SVG source code](https://github.com/lhem43/lhem43/blob/main/scripts/build_profile_svg.py)
-
-</td>
-</tr>
-</table>
 
 ## Tech stack
 
 <p>
-  <a href="https://aws.amazon.com/"><img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS" /></a>
-  <a href="https://spark.apache.org/"><img src="https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark" /></a>
-  <a href="https://trino.io/"><img src="https://img.shields.io/badge/Trino-DD00A1?style=for-the-badge&logo=trino&logoColor=white" alt="Trino" /></a>
-  <a href="https://airflow.apache.org/"><img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Airflow" /></a>
-  <a href="https://www.databricks.com/"><img src="https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white" alt="Databricks" /></a>
-</p>
-<p>
-  <a href="https://iceberg.apache.org/"><img src="https://img.shields.io/badge/Iceberg-3B82F6?style=for-the-badge&logo=apache&logoColor=white" alt="Iceberg" /></a>
-  <a href="https://hudi.apache.org/"><img src="https://img.shields.io/badge/Hudi-111111?style=for-the-badge&logo=apache&logoColor=white" alt="Hudi" /></a>
-  <a href="https://kafka.apache.org/"><img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka" /></a>
-  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" /></a>
-  <a href="https://www.postgresql.org/"><img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" /></a>
-  <a href="https://kubernetes.io/"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
-  <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" /></a>
+  <a href="https://aws.amazon.com/"><img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white" alt="AWS" /></a>
+  <a href="https://spark.apache.org/"><img src="https://img.shields.io/badge/Spark-E25A1C?style=flat-square&logo=apachespark&logoColor=white" alt="Apache Spark" /></a>
+  <a href="https://trino.io/"><img src="https://img.shields.io/badge/Trino-DD00A1?style=flat-square&logo=trino&logoColor=white" alt="Trino" /></a>
+  <a href="https://airflow.apache.org/"><img src="https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white" alt="Airflow" /></a>
+  <a href="https://www.databricks.com/"><img src="https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white" alt="Databricks" /></a>
+  <a href="https://iceberg.apache.org/"><img src="https://img.shields.io/badge/Iceberg-3B82F6?style=flat-square&logo=apache&logoColor=white" alt="Iceberg" /></a>
+  <a href="https://hudi.apache.org/"><img src="https://img.shields.io/badge/Hudi-111111?style=flat-square&logo=apache&logoColor=white" alt="Hudi" /></a>
+  <a href="https://kafka.apache.org/"><img src="https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Kafka" /></a>
+  <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /></a>
+  <a href="https://kubernetes.io/"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" /></a>
+  <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" /></a>
 </p>
 
 ## Experience
@@ -80,7 +47,7 @@ Built streaming and batch pipelines focused on clean contracts, observability, a
 <details>
 <summary><b>Cloud-native systems</b></summary>
 <br>
-Worked in AWS-first environments with containerized services, infra as code, and automation-friendly design.
+Worked in AWS-first environments with containerized services, infrastructure as code, and automation-friendly design.
 </details>
 
 <details>
