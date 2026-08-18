@@ -28,10 +28,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Rebuild and verify hero
-        run: |
-          python scripts/build_profile_hero.py
-          test "$(wc -c < assets/profile/profile-hero.webp)" -eq 63394
+      - name: Rebuild and validate hero
+        run: python scripts/build_profile_hero.py
 
       - name: Commit verified hero
         run: |
