@@ -8,8 +8,6 @@ on:
     branches: [main]
     paths:
       - 'README.md'
-      - 'scripts/build_profile_hero.py'
-      - 'scripts/hero_payload_final/**'
       - 'scripts/update_recent_projects.py'
       - '.github/workflows/update-profile.yml'
 
@@ -21,7 +19,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  profile:
+  recent-work:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,9 +30,6 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Rebuild approved profile hero
-        run: python scripts/build_profile_hero.py
-
       - name: Update recent public projects
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,14 +37,14 @@ jobs:
           PROJECT_LIMIT: '4'
         run: python scripts/update_recent_projects.py
 
-      - name: Commit generated profile
+      - name: Commit README changes
         run: |
-          git add assets/profile/profile-hero.webp README.md
+          git add README.md
           if git diff --cached --quiet; then
-            echo 'No profile changes'
+            echo 'No README changes'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'chore: refresh profile'
+          git commit -m 'chore: refresh recent public work'
           git push
