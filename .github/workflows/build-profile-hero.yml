@@ -1,0 +1,46 @@
+name: build profile hero
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_profile_hero.py'
+      - 'scripts/hero_payload_final/**'
+      - '.github/workflows/build-profile-hero.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-hero-build
+  cancel-in-progress: true
+
+jobs:
+  build-hero:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild and verify hero
+        run: |
+          python scripts/build_profile_hero.py
+          test "$(wc -c < assets/profile/profile-hero.webp)" -eq 63394
+
+      - name: Commit verified hero
+        run: |
+          git add assets/profile/profile-hero.webp
+          if git diff --cached --quiet; then
+            echo 'Hero already up to date'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix: restore verified profile hero'
+          git push
