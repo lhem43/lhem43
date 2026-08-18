@@ -1,108 +1,90 @@
 #!/usr/bin/env python3
-import html
+from __future__ import annotations
+
 import json
 import os
 import urllib.request
 from datetime import datetime
+from pathlib import Path
 
-OWNER = os.getenv("PROFILE_OWNER", "lhem43")
-LIMIT = int(os.getenv("PROJECT_LIMIT", "4"))
-TOKEN = os.getenv("GITHUB_TOKEN", "")
-README = "README.md"
+OWNER = os.environ.get("PROFILE_OWNER", "lhem43")
+README_PATH = Path("README.md")
 START = "<!-- recent-projects:start -->"
 END = "<!-- recent-projects:end -->"
+HEADERS = {"User-Agent": f"{OWNER}-profile-readme-updater"}
 
 
-def api(path):
-    req = urllib.request.Request(
-        "https://api.github.com" + path,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": f"{OWNER}-profile",
-            **({"Authorization": f"Bearer {TOKEN}"} if TOKEN else {}),
-        },
-    )
-    with urllib.request.urlopen(req) as r:
-        return json.load(r)
+def request_json(url: str):
+    req = urllib.request.Request(url, headers=HEADERS)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.load(resp)
 
 
-def latest_commit(repo):
-    branch = repo.get("default_branch")
-    if not branch:
-        return None
-    try:
-        commits = api(f"/repos/{OWNER}/{repo['name']}/commits?sha={branch}&per_page=1")
-    except Exception:
-        return None
+def fmt_date(iso_text: str) -> str:
+    dt = datetime.fromisoformat(iso_text.replace("Z", "+00:00"))
+    return dt.strftime("%d %b %Y")
+
+
+def fetch_recent_repos(owner: str, limit: int = 5):
+    repos = request_json(f"https://api.github.com/users/{owner}/repos?per_page=100&sort=updated")
+    repos = [r for r in repos if not r.get("fork") and r["name"] != owner]
+    repos.sort(key=lambda r: r.get("pushed_at") or "", reverse=True)
+    return repos[:limit]
+
+
+def fetch_latest_commit(owner: str, repo: str, default_branch: str):
+    commits = request_json(f"https://api.github.com/repos/{owner}/{repo}/commits?sha={default_branch}&per_page=1")
     if not commits:
         return None
     c = commits[0]
-    meta = c.get("commit", {})
-    who = meta.get("committer") or meta.get("author") or {}
-    date = who.get("date")
-    message = (meta.get("message") or "").splitlines()[0].strip()
-    if not date:
-        return None
     return {
-        "date": date,
-        "url": c.get("html_url", repo["html_url"]),
-        "sha": (c.get("sha") or "")[:7],
-        "message": message,
+        "sha": c["sha"][:7],
+        "url": c["html_url"],
+        "message": c["commit"]["message"].splitlines()[0][:80],
     }
 
 
-def esc(value):
-    return html.escape(str(value or ""), quote=True)
+def build_section(owner: str) -> str:
+    rows = []
+    for repo in fetch_recent_repos(owner):
+        commit = fetch_latest_commit(owner, repo["name"], repo["default_branch"])
+        language = repo.get("language") or "-"
+        stars = repo.get("stargazers_count", 0)
+        updated = fmt_date(repo["pushed_at"])
+        latest_commit = "<sub>No commits found</sub>"
+        if commit:
+            latest_commit = (
+                f'<a href="{commit["url"]}"><code>{commit["sha"]}</code></a>'
+                f'<br><sub>{commit["message"]}</sub>'
+            )
+        rows.append(
+            "<tr>"
+            f'<td><a href="{repo["html_url"]}"><b>{repo["name"]}</b></a><br><sub>{repo.get("description") or "Public repository"}</sub></td>'
+            f'<td><code>{language}</code></td>'
+            f'<td>{stars}</td>'
+            f'<td>{latest_commit}</td>'
+            f'<td><sub>{updated}</sub></td>'
+            "</tr>"
+        )
 
-
-repos = api(f"/users/{OWNER}/repos?type=owner&sort=full_name&per_page=100")
-items = []
-for repo in repos:
-    if repo["name"] == OWNER or repo.get("fork") or repo.get("archived") or repo.get("private"):
-        continue
-    latest = latest_commit(repo)
-    if latest:
-        items.append((latest["date"], repo, latest))
-
-items.sort(key=lambda x: x[0], reverse=True)
-
-rows = []
-for _, repo, commit in items[:LIMIT]:
-    day = datetime.fromisoformat(commit["date"].replace("Z", "+00:00")).strftime("%d %b %Y")
-    repo_url = repo.get("html_url") or f"https://github.com/{OWNER}/{repo['name']}"
-    language = repo.get("language") or "—"
-    stars = repo.get("stargazers_count", 0)
-    description = repo.get("description") or "Public repository"
-    rows.append(
-        "<tr>"
-        f"<td><a href=\"{esc(repo_url)}\"><b>{esc(repo['name'])}</b></a><br>"
-        f"<sub>{esc(description)}</sub></td>"
-        f"<td><code>{esc(language)}</code></td>"
-        f"<td>★ {stars}</td>"
-        f"<td><a href=\"{esc(commit['url'])}\"><code>{esc(commit['sha'])}</code></a><br>"
-        f"<sub>{esc(commit['message'])}</sub></td>"
-        f"<td><sub>{esc(day)}</sub></td>"
-        "</tr>"
-    )
-
-if rows:
-    content = (
-        "<h3>⚡ Recent public work</h3>\n"
+    return (
+        f"{START}\n"
+        "<h3>Recent public work</h3>\n"
         "<table>\n"
         "<thead><tr><th>Repository</th><th>Language</th><th>Stars</th><th>Latest commit</th><th>Updated</th></tr></thead>\n"
-        "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n</table>\n"
-        "<sub>Auto-generated from public repositories by GitHub Actions.</sub>"
+        "<tbody>\n" + "\n".join(rows) + "\n</tbody>\n"
+        "</table>\n"
+        "<sub>Auto-generated from public repositories by GitHub Actions.</sub>\n"
+        f"{END}"
     )
-else:
-    content = "<h3>⚡ Recent public work</h3>\n<p><i>No public repository activity found yet.</i></p>"
 
-block = START + "\n" + content + "\n" + END
 
-with open(README, encoding="utf-8") as f:
-    text = f.read()
-if START not in text or END not in text:
-    raise SystemExit("README markers not found")
-before = text.split(START, 1)[0]
-after = text.split(END, 1)[1]
-with open(README, "w", encoding="utf-8") as f:
-    f.write(before + block + after)
+def main() -> None:
+    content = README_PATH.read_text(encoding="utf-8")
+    start = content.index(START)
+    end = content.index(END) + len(END)
+    README_PATH.write_text(content[:start] + build_section(OWNER) + content[end:], encoding="utf-8")
+
+
+if __name__ == "__main__":
+    main()

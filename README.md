@@ -1,18 +1,27 @@
 <div align="center">
   <a href="https://github.com/lhem43?tab=repositories" title="Explore my public repositories">
-    <img src="./assets/profile/profile-hero.webp" alt="leemanh — Data Engineer" width="100%" />
+    <img src="./assets/profile/profile-hero.webp" alt="leemanh - Data Engineer" width="1100" />
   </a>
 </div>
 
 <p align="center">
-  <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml"><img src="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml/badge.svg" alt="profile automation" /></a>
-  &nbsp;
+  <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml">
+    <img src="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml/badge.svg" alt="profile automation" />
+  </a>
+  &nbsp;&nbsp;
   <a href="https://github.com/lhem43?tab=repositories"><b>Repositories</b></a>
-  &nbsp;·&nbsp;
+  &nbsp;|&nbsp;
   <a href="#recent-public-work"><b>Recent work</b></a>
-  &nbsp;·&nbsp;
+  &nbsp;|&nbsp;
   <a href="https://github.com/lhem43/lhem43/actions/workflows/update-profile.yml"><b>Automation</b></a>
 </p>
+
+## Focus
+
+- **Lakehouse architecture** - building flexible data platforms around open table formats and dependable compute.
+- **Data pipelines** - designing batch and streaming flows with clear contracts, observability, and stable delivery.
+- **Cloud-native systems** - working in AWS-first environments with containerized services and automation-friendly infrastructure.
+- **Data products** - turning operational events into datasets and interfaces that support fast decisions.
 
 ## Tech stack
 
@@ -58,11 +67,11 @@ Turned raw operational events into datasets and interfaces that help teams make 
 
 <a id="recent-public-work"></a>
 <!-- recent-projects:start -->
-<h3>⚡ Recent public work</h3>
+<h3>Recent public work</h3>
 <table>
 <thead><tr><th>Repository</th><th>Language</th><th>Stars</th><th>Latest commit</th><th>Updated</th></tr></thead>
 <tbody>
-<tr><td><a href="https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli"><b>kufi-e-wallet-with-hyperledger-chain-cli</b></a><br><sub>Public repository</sub></td><td><code>Dart</code></td><td>★ 0</td><td><a href="https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli/commit/bdfea1c199b93b92500c69115a281132d19dc0b4"><code>bdfea1c</code></a><br><sub>docs: polish project README and architecture overview</sub></td><td><sub>15 Aug 2026</sub></td></tr>
+<tr><td><a href="https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli"><b>kufi-e-wallet-with-hyperledger-chain-cli</b></a><br><sub>Public repository</sub></td><td><code>Dart</code></td><td>0</td><td><a href="https://github.com/lhem43/kufi-e-wallet-with-hyperledger-chain-cli/commit/bdfea1c199b93b92500c69115a281132d19dc0b4"><code>bdfea1c</code></a><br><sub>docs: polish project README and architecture overview</sub></td><td><sub>15 Aug 2026</sub></td></tr>
 </tbody>
 </table>
 <sub>Auto-generated from public repositories by GitHub Actions.</sub>
